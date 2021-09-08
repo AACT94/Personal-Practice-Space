@@ -1,0 +1,162 @@
+using System;
+
+namespace SwitchStatement
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("How many rows do you want?");
+			int rows = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("\nHow many columns do you want?");
+			int columns = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("\nWhat symbol do you want to convert?");
+			char symbol = Convert.ToChar(Console.ReadLine());
+			Pattern1(rows, columns, symbol);
+			Pattern2(rows, columns);
+			Pattern3(rows, columns);
+			Pattern4(rows, columns);
+			Pattern5(rows, columns);
+			Pattern6(rows, columns);
+			Pattern7(rows, columns);
+			Pattern8(rows, columns);
+			Pattern9(rows, columns);
+		}
+
+		public static void Pattern1(int rows, int columns, char symbol)
+		{
+			Console.WriteLine("\nPatron 1");
+			for (int i = 0; i < rows; i++)
+			{
+				for (int j = 0; j < columns; j++)
+				{
+					Console.Write(symbol);
+				}
+
+				Console.WriteLine();
+			}
+		}
+
+		public static void Pattern2(int rows, int columns)
+		{
+			Console.WriteLine("\nPatron 2");
+			for (int j = 0; j < rows; j++)
+			{
+				for (int i = 0; i < columns; i++)
+				{
+					Console.Write(j + 1);
+				}
+
+				Console.WriteLine();
+			}
+		}
+
+		public static void Pattern3(int rows, int columns)
+		{
+			Console.WriteLine("\n Patron 3");
+			for (int j = 0; j < rows; j++)
+			{
+				for (int i = 0; i < columns; i++)
+				{
+					Console.Write(i + 1);
+				}
+
+				Console.WriteLine();
+			}
+		}
+
+		public static void Pattern5(int rows, int columns)
+		{
+			Console.WriteLine("\nPatron 5");
+			for (int j = rows; j > 0; j--)
+			{
+				for (int i = columns; i > 0; i--)
+				{
+					Console.Write(i);
+				}
+
+				Console.WriteLine();
+			}
+		}
+
+		public static void Pattern4(int rows, int columns)
+		{
+			Console.WriteLine("\nPatron 4");
+			for (int j = rows; j > 0; j--)
+			{
+				for (int i = columns; i > 0; i--)
+				{
+					Console.Write(j);
+				}
+
+				Console.WriteLine();
+			}
+		}
+
+		public static void Pattern6(int rows, int columns)
+		{
+			int k = 1;
+			Console.WriteLine("\nPatron 6");
+			for (int j = 0; j < rows; j++)
+			{
+				for (int i = 0; i < columns; i++)
+				{
+					Console.Write(k + ", ");
+					k++;
+				}
+
+				Console.WriteLine();
+			}
+		}
+
+		public static void Pattern7(int rows, int columns)
+		{
+			int k = 1;
+			Console.WriteLine("\nPatron 7");
+			for (int j = 0; j < rows; j++)
+			{
+				for (int i = 0; i < columns; i++)
+				{
+					Console.Write(k + ", ");
+					k += 2;
+				}
+
+				Console.WriteLine();
+			}
+		}
+
+		public static void Pattern8(int rows, int columns)
+		{
+			int k = 2;
+			Console.WriteLine("\nPatron 8");
+			for (int j = 0; j < rows; j++)
+			{
+				for (int i = 0; i < columns; i++)
+				{
+					Console.Write(k + ", ");
+					k += 2;
+				}
+
+				Console.WriteLine();
+			}
+		}
+
+		public static void Pattern9(int rows, int columns)
+		{
+			int k = 1;
+			int m = 1;
+			Console.WriteLine("\nPatron 9");
+			for (int j = 0; j < rows; j++)
+			{
+				for (int i = 0; i < columns; i++)
+				{
+					Console.Write(k + ", ");
+					k += m;
+				}
+				m++;
+				k = m;
+				Console.WriteLine();
+			}
+		}
+	}
+}
