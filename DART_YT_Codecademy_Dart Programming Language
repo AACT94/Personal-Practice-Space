@@ -1,0 +1,70 @@
+//===================
+/* HELLO WORLD
+
+main (){
+  print("My name is Adrian");
+}
+
+//=====
+
+void main(){
+  print("My name is Adrian");
+}
+*/
+import 'dart:io';
+
+void main() {
+  stdout.writeln("What is your name: ?");
+  var name = stdin.readLineSync();
+  print("My name is $name");
+}
+
+
+/*Data Types
+  int
+  double
+  String: you can use double quotes or single quotes
+  bool: true || false
+  var: It assigns the data type that think is best
+  dynamic : it can change its type in run time
+*/
+
+/*Strongly Typed LanguagE: The type of a variable is known at compile time
+For example: C++, Java, Swift
+
+Dynamic Type Language: The type of a variable is know at run time
+For example: Python, Ruby, Javascript.
+*/
+
+
+/*
+void main() {
+//Integer Types
+  int amount1 = 100;
+  var amount2 = 200;
+
+  print("Amount 1: $amount1 | Amount2: $amount2 \n ");
+
+//Double Types
+  double dAmount1 = 100.11;
+  double dAmount2 = 200.22;
+  print("Amount1 : $dAmount1 | Amount2: $dAmount2\n");
+
+//String Types
+  String name1 = "Adrian";
+  var name2 = "Diana";
+  print("Name1 : $name1 | Name2: $name2\n");
+
+  bool isItTrue1 = true;
+  var isItTrue2 = false;
+  print("isItTrue1: $isItTrue1 | isItTrue2: $isItTrue2\n");
+
+  dynamic weakVariable = 100;
+  print('weakVariable1: $weakVariable\n');
+
+  weakVariable = "Adrian Coronado";
+  print("weakVariable2: $weakVariable\n");
+
+  weakVariable = "Adrian Coronado";
+  print("weakVariable2: $weakVariable\n");
+}*/
